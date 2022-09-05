@@ -1,0 +1,282 @@
+*, *::after, *::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  caret-color: transparent;
+}
+:root {
+  --ff-primary: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+
+  --fw-reg: 400;
+  --fw-med: 500;
+  --fw-bold: 700;
+
+  --clr-light: #ffffff;
+  --clr-dark:#222222;
+  --clr-mid-dark: #333333;
+  --clr-accent: #E40914;
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+
+button {
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+  padding: 0.55em 1em;
+  font-size: 1em;
+  border-radius: 0.25rem;
+
+}
+
+h1, h2, h3, h4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--clr-light);
+}
+h1 {
+  font-size: 3.125rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.625rem;
+  font-weight: var(--fw-reg);
+}
+
+h4 {
+  font-size: 1.475rem;
+  font-weight: var(--fw-reg);
+  padding-bottom: 1rem;
+
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+/* INTRO */
+
+section {
+  text-align: center;
+  width: 100%;
+  height: 96%;
+  border-bottom: solid 8px var(--clr-dark);
+  color: var(--clr-light);
+  padding: 2.5rem;
+
+
+}
+.intro {
+  height: 100%;
+  background-color: var(--clr-dark);
+  background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 20%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.75) 80%),
+    url(/Images/background1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__icon {
+  height: 1.75rem;
+}
+
+.navbar__button {
+  border-radius: 0.25rem;
+}
+
+.hero {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  height: 70%;
+
+}
+
+.input-form {
+  margin: 0 auto;
+  max-width: 600px;
+
+}
+
+.signup-input {
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.15em;
+  font-size: 1rem;
+  max-width: 600px;
+
+}
+
+.signup-button {
+  margin: 0 auto;
+
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  padding: 0 5%;
+  flex-direction: column;
+}
+
+
+
+/* TV FEATURE */
+
+.tv-feature {
+  background-color: black;
+  background-image: url(Images/background2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  padding: 2.5rem;
+  top: 5%;
+}
+
+/* DOWNLOAD FEATURE */
+.download-feature {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin: 0 auto;
+}
+
+.download-card {
+  display: flex;
+  background-color: black;
+  border: solid 2px var(--clr-mid-dark);
+  border-radius: 1rem;
+  padding: 10px;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 130px;
+  max-width: 400px;
+}
+
+.download-card__image {
+  height: 65px;
+}
+
+.download-card__text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: auto 10px;
+  width: 100%;
+  text-align: left;
+  padding:8px
+}
+
+.download-card__title {
+  font-weight: bold;
+}
+
+.download-card__content {
+  color:#0071eb;
+  font-size: 0.9rem;
+}
+
+.download-card__icon {
+  height: 20px;
+  margin: auto 20px;  
+}
+
+/* DEVICES FEATURE */
+.devices-feature {
+  background-color: black;
+  background-image: url(Images/background4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  padding: 3.75rem 2.5rem;
+};
+
+/* CHILDREN FEATURE */
+.children-feature {
+  background-color: black;
+  color: red;
+}
+
+.children-feature img {
+  position: relative;
+  bottom: 5px;
+  max-height: 85%;
+
+}
+
+/* FAQ SECTION */
+.FAQ {
+padding: 10%;
+height: fit-content;
+align-items: center;
+}
+
+.FAQ h2 {
+  margin-bottom: 2rem;
+}
+
+.accordion {
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background-color: #303030;
+  text-align: left;
+  margin-bottom: 8px;
+
+}
+
+.accordion-header {
+  cursor: pointer;
+  margin: 1px;
+  padding: 1.125rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-title span {
+  font-size: 1.25rem;
+}
+
+.accordion-content {
+  overflow:hidden;
+}
+
+.accordion-body {
+  border-top: solid 1px black;
+  font-size: 1rem;
+  padding: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.expand-icon {
+  height: 20px;
+}
+
+.open-dropdown {
+  transform: rotate(45deg);
+}
+.collapse {
+  height: 0;
+}
